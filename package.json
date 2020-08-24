@@ -50,8 +50,5 @@
   },
   "dependencies": {
     "@nteract/notebook-render": "^5.0.4-alpha.0"
-  },
-  "resolutions": {
-    "@nteract/notebook-render": "https://github.com/rafaelquintanilha/notebook-render"
   }
 }
