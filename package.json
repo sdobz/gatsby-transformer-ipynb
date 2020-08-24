@@ -49,9 +49,6 @@
     "gatsby": ">2.0.0-alpha"
   },
   "dependencies": {
-    "@nteract/notebook-render": "^5.0.4-alpha.0"
-  },
-  "resolutions": {
-    "@nteract/notebook-render": "https://github.com/rafaelquintanilha/notebook-render"
+    "@rafaelquintanilha/notebook-render": "https://github.com/rafaelquintanilha/notebook-render"
   }
 }
