@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
     "watch": "babel -w src --out-dir . --ignore **/__tests__",
-    "prepare": "NODE_ENV=production npm run build",
+    "prepare": "cross-env NODE_ENV=production npm run build",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src",
     "format": "prettier-eslint --write '**/*.{js,md,json}'",

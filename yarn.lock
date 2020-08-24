@@ -582,6 +582,13 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.3.1":
+  version "7.11.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
+  integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.1.0", "@babel/template@^7.1.2", "@babel/template@^7.2.2":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.2.2.tgz#005b3fdf0ed96e88041330379e0da9a708eb2907"
@@ -695,6 +702,16 @@
   resolved "https://registry.yarnpkg.com/@nteract/mathjax/-/mathjax-3.0.5-alpha.0.tgz#f89647928e814266a388463a1910d73b3a2be569"
   integrity sha512-E4/GnLRM6bX79sEVLZrOfPoBvhqewH/wpYZvn0KX8GLZPGFxHGQ+Ftjz4i0pg5S7RmPSDAhfL1C+/rYGFD+ksA==
 
+"@nteract/messaging@^5.0.4-alpha.0":
+  version "5.0.4-alpha.0"
+  resolved "https://registry.yarnpkg.com/@nteract/messaging/-/messaging-5.0.4-alpha.0.tgz#6720ad374a08a7f69a44c8249b5fd922dc317f1e"
+  integrity sha512-NbFwJFTUaqBJK8u2WhjDd53v+nyMNfvxdSlqLT2re90wfi080h7ZEDIMyrwnWCdBM0AqpSCgaB23NdcDQ+JgEw==
+  dependencies:
+    "@nteract/types" "^3.1.4-alpha.0"
+    "@types/uuid" "^3.4.4"
+    rxjs "^6.3.3"
+    uuid "^3.1.0"
+
 "@nteract/notebook-render@^5.0.4-alpha.0":
   version "5.0.4-alpha.0"
   resolved "https://registry.yarnpkg.com/@nteract/notebook-render/-/notebook-render-5.0.4-alpha.0.tgz#04ec72792bb7010cc52bd3836a0898ce4aeffa1b"
@@ -703,6 +720,24 @@
     "@nteract/commutable" "^6.0.4-alpha.0"
     "@nteract/display-area" "^5.0.4-alpha.0"
     "@nteract/presentational-components" "^2.0.4-alpha.0"
+    "@nteract/transforms" "^5.0.4-alpha.0"
+    katex "^0.10.0-alpha"
+    react-katex "^2.0.2"
+    react-markdown "^4.0.0"
+    rehype-katex "^1.1.1"
+    rehype-stringify "^5.0.0"
+    remark "^9.0.0"
+    remark-math "^1.0.4"
+    remark-rehype "^4.0.0"
+
+"@nteract/notebook-render@https://github.com/rafaelquintanilha/notebook-render":
+  version "5.0.4-alpha.6"
+  resolved "https://github.com/rafaelquintanilha/notebook-render#4bdf417f1e62bef73c90246c0fd5d43fd786fce4"
+  dependencies:
+    "@nteract/commutable" "^6.0.4-alpha.0"
+    "@nteract/display-area" "^5.0.4-alpha.0"
+    "@nteract/presentational-components" "^3.0.11"
+    "@nteract/records" "^1.0.4-alpha.0"
     "@nteract/transforms" "^5.0.4-alpha.0"
     katex "^0.10.0-alpha"
     react-katex "^2.0.2"
@@ -724,6 +759,29 @@
     react-syntax-highlighter "^9.0.0"
     styled-components "^4.1.3"
     styled-jsx "^3.1.0"
+
+"@nteract/presentational-components@^3.0.11":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@nteract/presentational-components/-/presentational-components-3.4.1.tgz#b644e16c4f8ecc530ea733cc24dabf6d2fe27039"
+  integrity sha512-UDDddxbZv5E0YDnZQepT7jyRDBpxK8PPZMvcfM4R4ivfvPyJifJplop7s8wwx7hNL0prsE5JNgj/W3qiTPv1Yg==
+  dependencies:
+    "@blueprintjs/core" "^3.7.0"
+    "@blueprintjs/select" "^3.2.0"
+    classnames "^2.2.6"
+    re-resizable "^6.5.0"
+    react-syntax-highlighter "^12.0.0"
+    react-toggle "^4.1.1"
+
+"@nteract/records@^1.0.4-alpha.0":
+  version "1.0.4-alpha.0"
+  resolved "https://registry.yarnpkg.com/@nteract/records/-/records-1.0.4-alpha.0.tgz#65e15ea2d8ceebb3fb69675140ede63a5a392882"
+  integrity sha512-Sq3oiIGhxIPEd8/Dwl/WmwYKVoCQd9QlGsxeZUesk/6o6tQCfbZqdbxwQAG1AwH6ZK6TznnDB7fnlbeiqrbpgg==
+  dependencies:
+    "@nteract/messaging" "^5.0.4-alpha.0"
+    escape-carriage "^1.3.0"
+    immer "^1.5.0"
+    lodash "^4.17.4"
+    uuid "^3.1.0"
 
 "@nteract/styled-blueprintjsx@^1.1.5-alpha.0":
   version "1.1.5-alpha.0"
@@ -753,10 +811,25 @@
     react-json-tree "^0.11.0"
     styled-components "^4.1.3"
 
+"@nteract/types@^3.1.4-alpha.0":
+  version "3.1.4-alpha.0"
+  resolved "https://registry.yarnpkg.com/@nteract/types/-/types-3.1.4-alpha.0.tgz#aab80663ad4ca88f6044838b8ed037069b8880cd"
+  integrity sha512-bm7InZxttZRF0RkVjyP2FhhbiOLVlELm9HuxyAPY6SOCbhPUiiMcwtEzJBqedXZvoaZFTs+HSsA4AR4EE2HILQ==
+  dependencies:
+    "@nteract/commutable" "^6.0.4-alpha.0"
+    immutable "^4.0.0-rc.12"
+    rxjs "^6.3.3"
+    uuid "^3.1.0"
+
 "@types/dom4@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/dom4/-/dom4-2.0.1.tgz#506d5781b9bcab81bd9a878b198aec7dee2a6033"
   integrity sha512-kSkVAvWmMZiCYtvqjqQEwOmvKwcH+V4uiv3qPQ8pAh1Xl39xggGEo8gHUqV4waYGHezdFw0rKBR8Jt0CrQSDZA==
+
+"@types/uuid@^3.4.4":
+  version "3.4.9"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-3.4.9.tgz#fcf01997bbc9f7c09ae5f91383af076d466594e1"
+  integrity sha512-XDwyIlt/47l2kWLTzw/mtrpLdB+GPSskR2n/PIcPn+VYhVO77rGhRncIR5GPU0KRzXuqkDO+J5qqrG0Y8P6jzQ==
 
 abab@^2.0.0:
   version "2.0.0"
@@ -1513,7 +1586,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2:
+classnames@^2.2, classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -2371,6 +2444,11 @@ fast-levenshtein@~2.0.4:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
+fast-memoize@^2.5.1:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/fast-memoize/-/fast-memoize-2.5.2.tgz#79e3bb6a4ec867ea40ba0e7146816f6cdce9b57e"
+  integrity sha512-Ue0LwpDYErFbmNnZSF0UH6eImUwDmogUO1jyE+JbN2gsQz/jICm1Ve7t9QT0rNSsfJt+Hs4/S3GnsDVjL4HVrw==
+
 fault@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/fault/-/fault-1.0.2.tgz#c3d0fec202f172a3a4d414042ad2bb5e2a3ffbaa"
@@ -2832,6 +2910,11 @@ highlight.js@~9.12.0:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
   integrity sha1-5tnb5Xy+/mB1HwKvM2GVhwyQwB4=
 
+highlight.js@~9.15.0, highlight.js@~9.15.1:
+  version "9.15.10"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.15.10.tgz#7b18ed75c90348c045eef9ed08ca1319a2219ad2"
+  integrity sha512-RoV7OkQm0T3os3Dd2VHLNMoaoDVx77Wygln3n9l5YV172XonWG6rgQD3XnF/BuFFZw9A0TJgmMSO8FEWQgvcXw==
+
 home-or-tmp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
@@ -2912,6 +2995,11 @@ ignore@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
+
+immer@^1.5.0:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-1.12.1.tgz#40c6e5b292c00560836c2993bda3a24379d466f5"
+  integrity sha512-3fmKM6ovaqDt0CdC9daXpNi5x/YCYS3i4cwLdTVkhJdk5jrDXoPs7lCm3IqM3yhfSnz4tjjxbRG2CziQ7m8ztg==
 
 immutable@^4.0.0-rc.12:
   version "4.0.0-rc.12"
@@ -4011,6 +4099,14 @@ loose-envify@^1.0.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lowlight@1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.12.1.tgz#014acf8dd73a370e02ff1cc61debcde3bb1681eb"
+  integrity sha512-OqaVxMGIESnawn+TU/QMV5BJLbUghUfjDWPAtFqDYDmDtr4FnB+op8xM+pR7nKlauHNUHXGt0VgWatFB8voS5w==
+  dependencies:
+    fault "^1.0.2"
+    highlight.js "~9.15.0"
+
 lowlight@~1.9.1:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.9.2.tgz#0b9127e3cec2c3021b7795dd81005c709a42fdd1"
@@ -4931,6 +5027,13 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+re-resizable@^6.5.0:
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/re-resizable/-/re-resizable-6.5.4.tgz#909a1e37f9d1a3afd356893a5779a030167be641"
+  integrity sha512-7T3L1lexB2zkZIDmzRJbwdq+xGFuRkrEVQIf5hBPnh7JuS9kG9Yc8XgIaxTWic1kU7jVlDgqzfId/gvmpBCjpA==
+  dependencies:
+    fast-memoize "^2.5.1"
+
 react-base16-styling@^0.5.1:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/react-base16-styling/-/react-base16-styling-0.5.3.tgz#3858f24e9c4dd8cbd3f702f3f74d581ca2917269"
@@ -4992,6 +5095,17 @@ react-popper@^1.0.0:
     typed-styles "^0.0.7"
     warning "^4.0.2"
 
+react-syntax-highlighter@^12.0.0:
+  version "12.2.1"
+  resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-12.2.1.tgz#14d78352da1c1c3f93c6698b70ec7c706b83493e"
+  integrity sha512-CTsp0ZWijwKRYFg9xhkWD4DSpQqE4vb2NKVMdPAkomnILSmsNBHE0n5GuI5zB+PU3ySVvXvdt9jo+ViD9XibCA==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    highlight.js "~9.15.1"
+    lowlight "1.12.1"
+    prismjs "^1.8.4"
+    refractor "^2.4.1"
+
 react-syntax-highlighter@^9.0.0:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-9.0.1.tgz#cad91692e1976f68290f24762ac3451b1fec3d26"
@@ -5002,6 +5116,13 @@ react-syntax-highlighter@^9.0.0:
     lowlight "~1.9.1"
     prismjs "^1.8.4"
     refractor "^2.4.1"
+
+react-toggle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/react-toggle/-/react-toggle-4.1.1.tgz#2317f67bf918ea3508a96b09dd383efd9da572af"
+  integrity sha512-+wXlMcSpg8SmnIXauMaZiKpR+r2wp2gMUteroejp2UTSqGTVvZLN+m9EhMzFARBKEw7KpQOwzCyfzeHeAndQGw==
+  dependencies:
+    classnames "^2.2.5"
 
 react-transition-group@^2.2.1:
   version "2.5.2"
@@ -5098,6 +5219,11 @@ regenerator-runtime@^0.12.0:
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
   integrity sha512-odxIc1/vDlo4iZcfXqRYFj0vpXFNoGdKMAUieAlFYO6m/nl5e9KR/beGf41z4a1FI+aQgtjhuaSlDxQ0hmkrHg==
+
+regenerator-runtime@^0.13.4:
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
+  integrity sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
 
 regenerator-transform@^0.13.3:
   version "0.13.3"
@@ -5438,6 +5564,13 @@ rxjs@^6.1.0:
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.3.3.tgz#3c6a7fa420e844a81390fb1158a9ec614f4bad55"
   integrity sha512-JTWmoY9tWCs7zvIk/CvRjhjGaOd+OVBM987mxFo+OW66cGpdKjZcpmc74ES1sB//7Kl/PAe8+wEakuhG4pcgOw==
+  dependencies:
+    tslib "^1.9.0"
+
+rxjs@^6.3.3:
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.2.tgz#8096a7ac03f2cc4fe5860ef6e572810d9e01c0d2"
+  integrity sha512-BHdBMVoWC2sL26w//BCu3YzKT4s2jip/WhwsGEDmeKYBhKDZeYezVUnHatYB7L85v5xs0BAQmg6BEYJEKxBabg==
   dependencies:
     tslib "^1.9.0"
 
