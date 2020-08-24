@@ -42,6 +42,7 @@ module.exports = async function onCreateNode(
     NotebookRender,
     {
       notebook: jupyterNode.json,
+      ...(pluginOptions.notebookProps ? pluginOptions.notebookProps : {}),
     },
     null
   )
