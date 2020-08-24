@@ -1,0 +1,36 @@
+diff --git a/node_modules/@nteract/notebook-render/src/index.tsx b/node_modules/@nteract/notebook-render/src/index.tsx
+index 7aa8990..b5d0881 100644
+--- a/node_modules/@nteract/notebook-render/src/index.tsx
++++ b/node_modules/@nteract/notebook-render/src/index.tsx
+@@ -31,6 +31,7 @@ interface Props {
+   notebook: ImmutableNotebook;
+   transforms: Transforms;
+   theme: "light" | "dark";
++  showPrompt: Boolean;
+ }
+ 
+ interface State {
+@@ -62,7 +63,8 @@ export default class NotebookRender extends React.PureComponent<Props, State> {
+       createCodeCell().set("source", "# where's the content?")
+     ),
+     theme: "light",
+-    transforms
++    transforms,
++    showPrompt: true
+   };
+ 
+   constructor(props: Props) {
+@@ -120,11 +122,11 @@ export default class NotebookRender extends React.PureComponent<Props, State> {
+                 return (
+                   <Cell key={cellId} className="cell">
+                     <Input hidden={sourceHidden} className="input-container">
+-                      <Prompt className="prompt"
++                      {this.props.showPrompt && <Prompt className="prompt"
+                         counter={cell.get(
+                           "execution_count"
+                         )}
+-                      />
++                      />}
+                       <Source language={language} theme={this.props.theme}>
+                         {source}
+                       </Source>
