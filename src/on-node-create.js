@@ -1,7 +1,7 @@
 const crypto = require(`crypto`)
 const React = require(`react`)
 const ReactDOMServer = require(`react-dom/server`)
-const NotebookRender = require(`@nteract/notebook-render`).default
+const NotebookRender = require(`@rafaelquintanilha/notebook-render`).default
 
 module.exports = async function onCreateNode(
   { node, loadNodeContent, boundActionCreators },
