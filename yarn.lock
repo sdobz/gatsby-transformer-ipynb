@@ -567,14 +567,6 @@
     js-levenshtein "^1.1.3"
     semver "^5.3.0"
 
-"@babel/runtime-corejs2@^7.0.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.2.0.tgz#5ccd722b72d2c18c6a7224b5751f4b9816b60ada"
-  integrity sha512-kPfmKoRI8Hpo5ZJGACWyrc9Eq1j3ZIUpUAQT2yH045OuYpccFJ9kYA/eErwzOM2jeBG1sC8XX1nl1EArtuM8tg==
-  dependencies:
-    core-js "^2.5.7"
-    regenerator-runtime "^0.12.0"
-
 "@babel/runtime@^7.1.2":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.2.0.tgz#b03e42eeddf5898e00646e4c840fa07ba8dcad7f"
@@ -712,54 +704,6 @@
     rxjs "^6.3.3"
     uuid "^3.1.0"
 
-"@nteract/notebook-render@^5.0.4-alpha.0":
-  version "5.0.4-alpha.0"
-  resolved "https://registry.yarnpkg.com/@nteract/notebook-render/-/notebook-render-5.0.4-alpha.0.tgz#04ec72792bb7010cc52bd3836a0898ce4aeffa1b"
-  integrity sha512-O+81Q4JdzGCn2+ZCaPCaLUcyZc8ARXZc0Wodmp6IApBCmfgjDTg8+vjyybZHugjsCyPSx0a4hInBNhaLTAiBIg==
-  dependencies:
-    "@nteract/commutable" "^6.0.4-alpha.0"
-    "@nteract/display-area" "^5.0.4-alpha.0"
-    "@nteract/presentational-components" "^2.0.4-alpha.0"
-    "@nteract/transforms" "^5.0.4-alpha.0"
-    katex "^0.10.0-alpha"
-    react-katex "^2.0.2"
-    react-markdown "^4.0.0"
-    rehype-katex "^1.1.1"
-    rehype-stringify "^5.0.0"
-    remark "^9.0.0"
-    remark-math "^1.0.4"
-    remark-rehype "^4.0.0"
-
-"@nteract/notebook-render@https://github.com/rafaelquintanilha/notebook-render":
-  version "5.0.4-alpha.6"
-  resolved "https://github.com/rafaelquintanilha/notebook-render#4bdf417f1e62bef73c90246c0fd5d43fd786fce4"
-  dependencies:
-    "@nteract/commutable" "^6.0.4-alpha.0"
-    "@nteract/display-area" "^5.0.4-alpha.0"
-    "@nteract/presentational-components" "^3.0.11"
-    "@nteract/records" "^1.0.4-alpha.0"
-    "@nteract/transforms" "^5.0.4-alpha.0"
-    katex "^0.10.0-alpha"
-    react-katex "^2.0.2"
-    react-markdown "^4.0.0"
-    rehype-katex "^1.1.1"
-    rehype-stringify "^5.0.0"
-    remark "^9.0.0"
-    remark-math "^1.0.4"
-    remark-rehype "^4.0.0"
-
-"@nteract/presentational-components@^2.0.4-alpha.0":
-  version "2.0.4-alpha.0"
-  resolved "https://registry.yarnpkg.com/@nteract/presentational-components/-/presentational-components-2.0.4-alpha.0.tgz#d28e9a169de7fa1e1a64eb6d16991ff0ad1e2fb2"
-  integrity sha512-SQaOlM5NSuQIe/XQqBpfbPSaErFUwowzkS5E4oQTWLSXMLxhpdk8sXKbl6crRlGGn2IQamsoe45FCfdm8GruVQ==
-  dependencies:
-    "@blueprintjs/core" "^3.7.0"
-    "@blueprintjs/select" "^3.2.0"
-    "@nteract/styled-blueprintjsx" "^1.1.5-alpha.0"
-    react-syntax-highlighter "^9.0.0"
-    styled-components "^4.1.3"
-    styled-jsx "^3.1.0"
-
 "@nteract/presentational-components@^3.0.11":
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@nteract/presentational-components/-/presentational-components-3.4.1.tgz#b644e16c4f8ecc530ea733cc24dabf6d2fe27039"
@@ -782,15 +726,6 @@
     immer "^1.5.0"
     lodash "^4.17.4"
     uuid "^3.1.0"
-
-"@nteract/styled-blueprintjsx@^1.1.5-alpha.0":
-  version "1.1.5-alpha.0"
-  resolved "https://registry.yarnpkg.com/@nteract/styled-blueprintjsx/-/styled-blueprintjsx-1.1.5-alpha.0.tgz#327398b1dbfacb9d1be807c72ea3d5442cb1c04b"
-  integrity sha512-6Ng7yQ5mVYdmm4LYNV08uwfGGRVEkfy9GzfDA+0hFfiFoD8Vh7DYIy/MtBuxTlHIHPgm2C8u66U8JlNS41/Jng==
-  dependencies:
-    "@babel/runtime-corejs2" "^7.0.0"
-    babel-runtime "^6.26.0"
-    styled-jsx "^3.1.0"
 
 "@nteract/transform-vdom@^3.0.4-alpha.0":
   version "3.0.4-alpha.0"
@@ -820,6 +755,24 @@
     immutable "^4.0.0-rc.12"
     rxjs "^6.3.3"
     uuid "^3.1.0"
+
+"@rafaelquintanilha/notebook-render@https://github.com/rafaelquintanilha/notebook-render":
+  version "5.0.4-alpha.6"
+  resolved "https://github.com/rafaelquintanilha/notebook-render#ac29a13c635a7986b067e1580761d10408da6c1d"
+  dependencies:
+    "@nteract/commutable" "^6.0.4-alpha.0"
+    "@nteract/display-area" "^5.0.4-alpha.0"
+    "@nteract/presentational-components" "^3.0.11"
+    "@nteract/records" "^1.0.4-alpha.0"
+    "@nteract/transforms" "^5.0.4-alpha.0"
+    katex "^0.10.0-alpha"
+    react-katex "^2.0.2"
+    react-markdown "^4.0.0"
+    rehype-katex "^1.1.1"
+    rehype-stringify "^5.0.0"
+    remark "^9.0.0"
+    remark-math "^1.0.4"
+    remark-rehype "^4.0.0"
 
 "@types/dom4@^2.0.0":
   version "2.0.1"
@@ -1208,7 +1161,7 @@ babel-plugin-jest-hoist@^23.2.0:
     babel-plugin-syntax-jsx "^6.18.0"
     lodash "^4.17.10"
 
-babel-plugin-syntax-jsx@6.18.0, babel-plugin-syntax-jsx@^6.18.0:
+babel-plugin-syntax-jsx@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
   integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
@@ -1239,7 +1192,7 @@ babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.26.0, babel-runtime@^6.6.1:
+babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.26.0, babel-runtime@^6.6.1:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -1273,7 +1226,7 @@ babel-traverse@^6.0.0, babel-traverse@^6.18.0, babel-traverse@^6.26.0:
     invariant "^2.2.2"
     lodash "^4.17.4"
 
-babel-types@6.26.0, babel-types@^6.0.0, babel-types@^6.18.0, babel-types@^6.26.0:
+babel-types@^6.0.0, babel-types@^6.18.0, babel-types@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-types/-/babel-types-6.26.0.tgz#a3b073f94ab49eb6fa55cd65227a334380632497"
   integrity sha1-o7Bz+Uq0nrb6Vc1lInozQ4BjJJc=
@@ -1322,11 +1275,6 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
   dependencies:
     tweetnacl "^0.14.3"
-
-big.js@^3.1.3:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/big.js/-/big.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
-  integrity sha512-+hN/Zh2D08Mx65pZ/4g5bsmNiZUuChDiQfTUQ7qJr4/kuopCr88xZsAXv6mBoZEsUI4OuGHlX59qE94K2mMW8Q==
 
 binary-extensions@^1.0.0:
   version "1.12.0"
@@ -1719,11 +1667,6 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
-convert-source-map@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.5.1.tgz#b8278097b9bc229365de5c62cf5fcaed8b5599e5"
-  integrity sha1-uCeAl7m8IpNl3lxiz1/K7YtVmeU=
-
 convert-source-map@^1.1.0, convert-source-map@^1.4.0, convert-source-map@^1.5.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.6.0.tgz#51b537a8c43e0f04dec1993bffcdd504e758ac20"
@@ -1741,7 +1684,7 @@ core-js@^1.0.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
-core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.7:
+core-js@^2.4.0, core-js@^2.5.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.1.tgz#87416ae817de957a3f249b3b5ca475d4aaed6042"
   integrity sha512-L72mmmEayPJBejKIWe2pYtGis5r0tQ5NaJekdhyXgeMQTpJoBsH0NL4ElY2LfSoV15xeQWKQ+XTTOZdyero5Xg==
@@ -2026,11 +1969,6 @@ electron-to-chromium@^1.3.96:
   version "1.3.98"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.98.tgz#f200bdac84b1110d7d9904f34f4fc6d5573a8a9c"
   integrity sha512-WIZdNuvE3dFr6kkPgv4d/cfswNZD6XbeLBM8baOIQTsnbf4xWrVEaLvp7oNnbnMWWXDqq7Tbv+H5JfciLTJm4Q==
-
-emojis-list@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
-  integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
 
 encoding@^0.1.11:
   version "0.1.12"
@@ -2904,11 +2842,6 @@ hastscript@^5.0.0:
     hast-util-parse-selector "^2.2.0"
     property-information "^5.0.1"
     space-separated-tokens "^1.0.0"
-
-highlight.js@~9.12.0:
-  version "9.12.0"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
-  integrity sha1-5tnb5Xy+/mB1HwKvM2GVhwyQwB4=
 
 highlight.js@~9.15.0, highlight.js@~9.15.1:
   version "9.15.10"
@@ -3904,7 +3837,7 @@ json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json5@^0.5.0, json5@^0.5.1:
+json5@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
   integrity sha1-Hq3nrMASA0rYTiOWdn6tn6VJWCE=
@@ -4012,15 +3945,6 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
-loader-utils@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
-  integrity sha1-yYrvSIvM7aL/teLeZG1qdUQp9c0=
-  dependencies:
-    big.js "^3.1.3"
-    emojis-list "^2.0.0"
-    json5 "^0.5.0"
-
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -4106,14 +4030,6 @@ lowlight@1.12.1:
   dependencies:
     fault "^1.0.2"
     highlight.js "~9.15.0"
-
-lowlight@~1.9.1:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.9.2.tgz#0b9127e3cec2c3021b7795dd81005c709a42fdd1"
-  integrity sha512-Ek18ElVCf/wF/jEm1b92gTnigh94CtBNWiZ2ad+vTgW7cTmQxUY3I98BjHK68gZAJEWmybGBZgx9qv3QxLQB/Q==
-  dependencies:
-    fault "^1.0.2"
-    highlight.js "~9.12.0"
 
 lru-cache@^4.0.1:
   version "4.1.5"
@@ -5106,17 +5022,6 @@ react-syntax-highlighter@^12.0.0:
     prismjs "^1.8.4"
     refractor "^2.4.1"
 
-react-syntax-highlighter@^9.0.0:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-9.0.1.tgz#cad91692e1976f68290f24762ac3451b1fec3d26"
-  integrity sha512-rL5wJ0V23arSBahsRs0yhDxEFoA1dRjJ7hK6xKvIi6hd3fUXx950AhjYBQbR05CwYsAIQDWGMhH4Oh/v9XK67g==
-  dependencies:
-    babel-runtime "^6.18.0"
-    highlight.js "~9.12.0"
-    lowlight "~1.9.1"
-    prismjs "^1.8.4"
-    refractor "^2.4.1"
-
 react-toggle@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/react-toggle/-/react-toggle-4.1.1.tgz#2317f67bf918ea3508a96b09dd383efd9da572af"
@@ -5771,11 +5676,6 @@ source-map-url@^0.4.0:
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
   integrity sha1-PpNdfd1zYxuXZZlW1VEo6HtQhKM=
 
-source-map@0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
-  integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
-
 source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
@@ -5868,11 +5768,6 @@ stealthy-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
-
-string-hash@1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/string-hash/-/string-hash-1.1.3.tgz#e8aafc0ac1855b4666929ed7dd1275df5d6c811b"
-  integrity sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=
 
 string-length@^2.0.0:
   version "2.0.0"
@@ -5983,29 +5878,10 @@ styled-components@^4.1.3:
     stylis-rule-sheet "^0.0.10"
     supports-color "^5.5.0"
 
-styled-jsx@^3.1.0:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/styled-jsx/-/styled-jsx-3.1.3.tgz#06a00bde452e53d97e6c3d4b1dfccc38df029d83"
-  integrity sha512-35xH+rTOeQq1Si9kMXL5F6TmdoMtwFJNkukox0C6s3ffoA0JgytApIuZ8AT5H7HeBRoECmKue56xOV4oMDiYFg==
-  dependencies:
-    babel-plugin-syntax-jsx "6.18.0"
-    babel-types "6.26.0"
-    convert-source-map "1.5.1"
-    loader-utils "1.1.0"
-    source-map "0.7.3"
-    string-hash "1.1.3"
-    stylis "3.5.3"
-    stylis-rule-sheet "0.0.10"
-
-stylis-rule-sheet@0.0.10, stylis-rule-sheet@^0.0.10:
+stylis-rule-sheet@^0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.10.tgz#44e64a2b076643f4b52e5ff71efc04d8c3c4a430"
   integrity sha512-nTbZoaqoBnmK+ptANthb10ZRZOGC+EmTLLUxeYIuHNkEKcmKgXX1XWKkUBT2Ac4es3NybooPe0SmvKdhKJZAuw==
-
-stylis@3.5.3:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.5.3.tgz#99fdc46afba6af4deff570825994181a5e6ce546"
-  integrity sha512-TxU0aAscJghF9I3V9q601xcK3Uw1JbXvpsBGj/HULqexKOKlOEzzlIpLFRbKkCK990ccuxfXUqmPbIIo7Fq/cQ==
 
 stylis@^3.5.0:
   version "3.5.4"
