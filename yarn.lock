@@ -750,10 +750,10 @@
     rxjs "^6.3.3"
     uuid "^3.1.0"
 
-"@rafaelquintanilha/notebook-render@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@rafaelquintanilha/notebook-render/-/notebook-render-0.0.4.tgz#e2ff8c77b4ed0750d29315749a4c8e91704c2772"
-  integrity sha512-LCd7uiF3XG9IxymAmgyE/3T2+SKTG555/T2zZuXU3HEll6DasfjJ6S2tUkZScq1DfJ7YCIFMIC5xlqqjn5l89Q==
+"@rafaelquintanilha/notebook-render@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@rafaelquintanilha/notebook-render/-/notebook-render-0.0.5.tgz#80f6955b405de05c93938192a294f011d631948e"
+  integrity sha512-xNw5bUoJie7irWZf5qkaT5gJoqLmMVFKPndvF4tqiHxZGYFWacJeE9dh8ERvhVydygfELwFRsGus5LQOEJAc8g==
   dependencies:
     "@nteract/commutable" "^6.0.4-alpha.0"
     "@nteract/display-area" "^5.0.4-alpha.0"
