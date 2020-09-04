@@ -1,6 +1,6 @@
 {
   "name": "@rafaelquintanilha/gatsby-transformer-ipynb",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Transformer for .ipynb files.",
   "main": "n/a",
   "scripts": {
@@ -11,8 +11,7 @@
     "lint:fix": "eslint ./src",
     "format": "prettier-eslint --write '**/*.{js,md,json}'",
     "publish": "npm run lint && npm publish --access=public",
-    "test": "echo 'Error: no test specified' && exit 1",
-    "postinstall": "patch-package"
+    "test": "echo 'Error: no test specified' && exit 1"
   },
   "repository": {
     "type": "git",
@@ -50,9 +49,6 @@
     "gatsby": ">2.0.0-alpha"
   },
   "dependencies": {
-    "@rafaelquintanilha/gatsby-transformer-ipynb": "^0.1.11",
-    "@rafaelquintanilha/notebook-render": "^0.0.7",
-    "patch-package": "^6.2.2",
-    "postinstall-postinstall": "^2.1.0"
+    "@rafaelquintanilha/notebook-render": "^0.0.8"
   }
 }
