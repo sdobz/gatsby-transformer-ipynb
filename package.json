@@ -1,6 +1,6 @@
 {
   "name": "@rafaelquintanilha/gatsby-transformer-ipynb",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Transformer for .ipynb files.",
   "main": "n/a",
   "scripts": {
