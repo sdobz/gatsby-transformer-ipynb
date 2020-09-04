@@ -750,6 +750,13 @@
     rxjs "^6.3.3"
     uuid "^3.1.0"
 
+"@rafaelquintanilha/gatsby-transformer-ipynb@^0.1.11":
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@rafaelquintanilha/gatsby-transformer-ipynb/-/gatsby-transformer-ipynb-0.1.11.tgz#2c1b3c90b142ecc122515f0be64d97a1b86ceeaf"
+  integrity sha512-3TXRL3/tOA8ZCWCAZypVT7I2Bg9n2Ud1LZ9GfnM+maEOSo+Rnx/Mcq4Wr/yGqyYu+QaAcfzIqrkwuwWCU/NUhg==
+  dependencies:
+    "@rafaelquintanilha/notebook-render" "^0.0.7"
+
 "@rafaelquintanilha/notebook-render@^0.0.7":
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/@rafaelquintanilha/notebook-render/-/notebook-render-0.0.7.tgz#8549e5240b6ddbad0d882b13ce2932d9e4b72ac2"
