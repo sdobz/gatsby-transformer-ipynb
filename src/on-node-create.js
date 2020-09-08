@@ -51,6 +51,7 @@ module.exports = async function onCreateNode(
   // Add path to the file path
   if (node.internal.type === `File`) {
     jupyterNode.fileAbsolutePath = node.absolutePath
+    jupyterNode.fileRelativePath = node.relativePath
   }
 
   jupyterNode.internal.contentDigest = crypto
