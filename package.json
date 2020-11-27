@@ -1,6 +1,6 @@
 {
   "name": "@rafaelquintanilha/gatsby-transformer-ipynb",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Transformer for .ipynb files.",
   "main": "n/a",
   "scripts": {
@@ -49,6 +49,6 @@
     "gatsby": ">2.0.0-alpha"
   },
   "dependencies": {
-    "@rafaelquintanilha/notebook-render": "^0.0.8"
+    "@rafaelquintanilha/notebook-render": "0.0.9"
   }
 }
