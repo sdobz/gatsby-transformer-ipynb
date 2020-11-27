@@ -49,6 +49,6 @@
     "gatsby": ">2.0.0-alpha"
   },
   "dependencies": {
-    "@rafaelquintanilha/notebook-render": "0.0.10"
+    "@rafaelquintanilha/notebook-render": "^0.0.11"
   }
 }
