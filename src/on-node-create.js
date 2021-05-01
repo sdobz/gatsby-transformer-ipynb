@@ -4,10 +4,10 @@ const ReactDOMServer = require(`react-dom/server`)
 const NotebookRender = require(`@rafaelquintanilha/notebook-render`).default
 
 module.exports = async function onCreateNode(
-  { node, loadNodeContent, boundActionCreators },
+  { node, loadNodeContent, actions },
   pluginOptions // eslint-disable-line no-unused-vars
 ) {
-  const { createNode, createParentChildLink } = boundActionCreators
+  const { createNode, createParentChildLink } = actions
 
   // Filter out non-ipynb content by file extension and checkpoint notebooks
   if (
